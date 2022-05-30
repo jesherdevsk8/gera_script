@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Variaveis
+editor="subl"
+dia_de_hoje=$(date +"%a %e %h %Y")
+header="#!/usr/bin/env bash
+# -----------------------------------------------------------------
+# Script   : "$1"
+# Descrição: 
+# Versão   : 0.1
+# Autor    : Jesher Minelli <jesherdevsk8@gmail.com>
+# Data     : $dia_de_hoje
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------------------------
+# Uso: 
+# -----------------------------------------------------------------
+"
+
+# Testar se o arquivo já existe
+[[ -f $1 ]] && echo "Arquivo já existente! Saindo....." && exit 1 #arquivo existe?
+
+# Testar se o usuario passou o número certo de
+# argumentos ...... (1 argumento)
+[[ $# -ne 1 ]] && echo "Eu preciso de *um* nome de arquivo" && exit 1 # Passou um argumento?
+
+echo "$header" > $1
+chmod +x $1
+$editor $1
+
+exit 0
