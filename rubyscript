@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # -----------------------------------------------------------------
-# Script   : gera_ruby_script
+# Script   : rubyscript
 # Descrição: Gera scripts na linguagem ruby
 # Versão   : 0.1
 # Autor    : Jesher Minelli <jesherdevsk8@gmail.com>
@@ -12,12 +12,10 @@
 
 #-------------------------- VARIAVEIS -----------------------------
 
-editor="subl"
+editor="vim"
 dia_de_hoje=$(date +"%a %e %h %Y")
 header="#!/usr/bin/env ruby
-# -----------------------------------------------------------------
-# Scritp   : Jesher Minelli <jesherdevsk8@gmail.com> - $dia_de_hoje
-# Nome     : "$1"
+# Jesher Minelli <jesherdevsk8@gmail.com> - $dia_de_hoje
 "
 
 #--------------------------- TESTES -------------------------------
