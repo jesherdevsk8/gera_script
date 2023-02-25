@@ -1,16 +1,10 @@
 #!/usr/bin/env bash
-# -----------------------------------------------------------------
-# Script   : rubyscript
-# Descrição: Gera scripts na linguagem ruby
-# Versão   : 0.1
-# Autor    : Jesher Minelli <jesherdevsk8@gmail.com>
-# Data     : seg 15 ago 2022
-# Licença  : GNU/GPL v3.0
-# -----------------------------------------------------------------
-# Uso: 
-# -----------------------------------------------------------------
 
-#-------------------------- VARIAVEIS -----------------------------
+# -------------------- [ gera ruby script ] ----------------------+
+#        Script   : rubyscript                                    |
+#        Author   : Jesher Minelli <jesherdevsk8@gmail.com>       |
+#        Date     : seg 15 ago 2022                               |  
+# ----------------------------------------------------------------+
 
 editor="vim"
 dia_de_hoje=$(date +"%a %e %h %Y")
